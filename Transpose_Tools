@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+inline void keepWindowOpen() { char ch; cin >> ch; }
+
+struct note {
+    string name;
+    int positionValue;
+};
+
+
+int main() {
+
+    string notes [] = {"C","C#","D","D#","E","F","F#","G","G#","A","A#","B"};
+    int arrayLength = sizeof(notes)/sizeof(string);
+    for (int i = 0; i < arrayLength; i++){
+        note string[i];
+    }
+    
+    
+    cout << C;
+    return 0;
+    
+}
