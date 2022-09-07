@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+void newQuestion(string question,string answer,int repetitions){
+    string userAnswer;
+    do {
+        cout << question << "\n\n";
+        getline(cin,userAnswer);
+        if (userAnswer == answer){
+            repetitions --;
+            system("clear");
+            cout << "Correct," << repetitions << " more times to finish," << endl;
+        }
+        else {
+            cout << "Wrong, Try Again\n";
+        }
+    } while (repetitions > 0);
+}
+
+int main()
+{
+    newQuestion("Syntax for clearing the screen in Cpp","system(\"cls\")",10);
+}
