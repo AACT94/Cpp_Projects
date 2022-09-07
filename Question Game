@@ -5,7 +5,7 @@ using namespace std;
 void newQuestion(string question,string answer,int repetitions){
     string userAnswer;
     do {
-        cout << question << "\n\n";
+        cout << question << ": ";
         getline(cin,userAnswer);
         if (userAnswer == answer){
             repetitions --;
@@ -20,5 +20,6 @@ void newQuestion(string question,string answer,int repetitions){
 
 int main()
 {
-    newQuestion("Syntax for clearing the screen in Cpp","system(\"cls\")",10);
+    //newQuestion("Syntax for clearing the screen in Cpp","system(\"cls\")",10);
+    newQuestion("Circle Of Fifths","C G D A E B F#/Gb Db Ab Eb Bb F",5);
 }
