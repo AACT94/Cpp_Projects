@@ -3,6 +3,7 @@
 using namespace std;
 
 void newQuestion(string question,string answer,int repetitions){
+    system("clear");
     string userAnswer;
     do {
         cout << question << ": ";
@@ -16,10 +17,12 @@ void newQuestion(string question,string answer,int repetitions){
             cout << "Wrong, Try Again\n";
         }
     } while (repetitions > 0);
+    cout <<"End Trial" << flush;
 }
 
 int main()
 {
-    //newQuestion("Syntax for clearing the screen in Cpp","system(\"cls\")",10);
-    newQuestion("Circle Of Fifths","C G D A E B F#/Gb Db Ab Eb Bb F",5);
+    newQuestion("Syntax for clearing the screen in Cpp","system(\"cls\")",10);
+    newQuestion("Circle Of Fifths","C G D A E B F#/Gb Db Ab Eb Bb F",1);
+    newQuestion("Circle Of Fourths","C F Bb Eb Ab Db Gb/F# B E A D G",1);
 }
