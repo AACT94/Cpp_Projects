@@ -3,6 +3,10 @@
 using namespace std;
 
 void newQuestion(string question,string answer,int repetitions){
+    //Si colocamos este valor como 0, entonces nuestro programara, empezar a tomar la cantidad
+    //de repeticiones del usuario.
+    int state = 1;
+    if (state != 0) {repetitions = 1;}
     system("clear");
     string userAnswer;
     do {
@@ -17,6 +21,7 @@ void newQuestion(string question,string answer,int repetitions){
             cout << "Wrong, Try Again\n";
         }
     } while (repetitions > 0);
+    system("clear");
     cout <<"End Trial" << flush;
 }
 
@@ -55,7 +60,7 @@ int main()
     
     newQuestion("Scale 7 Sharps","C#",5);
     newQuestion("Scale 7 Flats","Cb",5);
-*/    
+    
     newQuestion("Sharps in the key of G?","F#",5);
     newQuestion("Sharps in the key of D?","F# C#",5);
     newQuestion("Sharps in the key of A?","C# F# G#",5);
@@ -65,11 +70,11 @@ int main()
     newQuestion("Sharps in the key of C#?","C# D# E# F# G# A# B#",5);
     
     newQuestion("Flats in the key of F?","Bb",5);
-    newQuestion("Flats in the key of Bb?","Bb Eb",5);
-    newQuestion("Flats in the key of Eb?","")
+    newQuestion("Flats in the key of Bb?","Bb Eb",5);*/
+    newQuestion("Flats in the key of Eb?","Eb Ab Bb",5);
     
     
-
+    system("clear");
     cout << "MAJOR SCALES\n";
 
     cin.get();
