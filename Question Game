@@ -22,7 +22,63 @@ void newQuestion(string question,string answer,int repetitions){
 
 int main()
 {
-    newQuestion("Syntax for clearing the screen in Cpp","system(\"cls\")",10);
-    newQuestion("Circle Of Fifths","C G D A E B F#/Gb Db Ab Eb Bb F",1);
-    newQuestion("Circle Of Fourths","C F Bb Eb Ab Db Gb/F# B E A D G",1);
+   // newQuestion("Syntax for clearing the screen in Cpp in Linux/MAC","system(\"clear\")",5);
+   // newQuestion("Syntax for clearing the screen in Cpp in Windows","system(\"cls\")",5);
+/*    
+    cout << "CIRCLE OF FIFTHS/CIRCLE OF FOURTHS RIDDLE\n";
+    cin.get();
+    
+    newQuestion("Circle Of Fifths","C G D A E B F#/Gb Db Ab Eb Bb F C",5);
+    newQuestion("Circle Of Fourths","C F Bb Eb Ab Db Gb/F# B E A D G C",5);
+    
+    newQuestion("Order Of Sharps","F C G D A E B",5);
+    newQuestion("Order of Flats","B E A D G C F",5);
+
+    newQuestion("Scale 0 Sharps/0 Flats","C",1);
+    newQuestion("Scale 1 Sharp","G",5);
+    newQuestion("Scale 1 Flat","F",5);
+    
+    newQuestion("Scale 2 Sharps","D",5);
+    newQuestion("Scale 2 Flats","Bb",5);
+    
+    newQuestion("Scale 3 Sharps","A",5);
+    newQuestion("Scale 3 Flats","Eb",5);
+    
+    newQuestion("Scale 4 Sharps","E",5);
+    newQuestion("Scale 4 Flats","Ab",5);
+    
+    newQuestion("Scale 5 Sharps","B",5);
+    newQuestion("Scale 5 Flats","Db",5);
+    
+    newQuestion("Scale 6 Sharps","F#",5);
+    newQuestion("Scale 6 Flats","Gb",5);
+    
+    newQuestion("Scale 7 Sharps","C#",5);
+    newQuestion("Scale 7 Flats","Cb",5);
+*/    
+    newQuestion("Sharps in the key of G?","F#",5);
+    newQuestion("Sharps in the key of D?","F# C#",5);
+    newQuestion("Sharps in the key of A?","C# F# G#",5);
+    newQuestion("Sharps in the key of E?","F# G# C# D#",5);
+    newQuestion("Sharps in the key of B?","C# D# F# G# A#",5);
+    newQuestion("Sharps in the key of F#?","F# G# A# C# D# E#",5);
+    newQuestion("Sharps in the key of C#?","C# D# E# F# G# A# B#",5);
+    
+    newQuestion("Flats in the key of F?","Bb",5);
+    newQuestion("Flats in the key of Bb?","Bb Eb",5);
+    newQuestion("Flats in the key of Eb?","")
+    
+    
+
+    cout << "MAJOR SCALES\n";
+
+    cin.get();
+    
+    newQuestion("Relative Minor to C?","Am",5);
+    newQuestion("Relative Minor to G?","Em",5);
+    newQuestion("Relative Minor to D?","Bm",5);
+    newQuestion("Relative Minor to A?","F#m",5);
+    newQuestion("Relative Minor to E?","C#m",5);
+    newQuestion("Relative Minor to B?","G#m",5);
+    newQuestion("Relative Minor to F#","D#m",5);
 }
