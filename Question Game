@@ -70,7 +70,7 @@ int main()
     newQuestion("Sharps in the key of C#?","C# D# E# F# G# A# B#",5);
     
     newQuestion("Flats in the key of F?","Bb",5);
-    newQuestion("Flats in the key of Bb?","Bb Eb",5);*/
+    newQuestion("Flats in the key of Bb?","Bb Eb",5);
     newQuestion("Flats in the key of Eb?","Eb Ab Bb",5);
     
     
@@ -86,4 +86,38 @@ int main()
     newQuestion("Relative Minor to E?","C#m",5);
     newQuestion("Relative Minor to B?","G#m",5);
     newQuestion("Relative Minor to F#","D#m",5);
+    newQuestion("Relative Minor to C#","A#m",5);
+    
+    newQuestion("Relative Minor to F","Dm",5);
+    newQuestion("Relative Minor to Bb","Gm",5);
+    newQuestion("Relative Minor to Eb","Cm",5);
+    newQuestion("Relative Minor to Ab","Fm",5);
+    newQuestion("Relative Minor to Db","Bbm",5);
+    newQuestion("Relative Minor to Gb","Ebm",5);
+    newQuestion("Relative Minor to Cb","Abm",5);
+    
+    
+    /////VBA: Workbooks
+    newQuestion("Syntax for open a workbook using absolute path","Workbook.Open Filename=\"C:\\User\\Documents\\Book1.xlsx\"",5);
+    newQuestion("Syntax for open a workbook using relative path","Workbook.Open Filename=\".\\Book1.xlsx\"",5);
+    newQuestion("Syntax for closing a workbook not saving the changes","Workbook(\"Book1.xlsx\").Close SaveChanges:=False",5);
+    newQuestion("Syntax for closing a workbook saving the changes","Workbook(\"Book1.xlsx\").Close SaveChanges:=True",5);
+    newQuestion("Syntax for referencing the actual workbook","ThisWorkbook.Worksheets(\"Sheet1\").Range(\"A1\")",5);
+    
+    /////VBA: Objects: Application
+    newQuestion("Syntax for habiliting calculation","Application.Calculation = xlCalculationAutomatic",5);
+    newQuestion("Syntax for desabiliting calculation","Application.Calculation = xlCalculationManual",5);
+    newQuestion("Syntax for habiliting screen updates","Application.ScreenUpdating = True",5);
+    newQuestion("Syntax for desabiliting screen updates","Application.ScreenUpdating = False",5);
+    newQuestion("Syntax for habiliting events","Application.EnableEvents = True",5);
+    newQuestion("Syntax for desabiliting events","Application.EnableEvents = False",5);
+    */
+    
+    ////VBA: SubRutinas
+    newQuestion("Syntax for declaring a subroutine","Sub Name() End Sub",5);
+    
+    
+    ////VBA: Strings
+    newQuestion("Function to replace a character in a string","example = Replace(stringName,letterToFind,replacement)",5);
+    
 }
