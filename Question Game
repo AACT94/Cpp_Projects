@@ -29,7 +29,7 @@ int main()
 {
    // newQuestion("Syntax for clearing the screen in Cpp in Linux/MAC","system(\"clear\")",5);
    // newQuestion("Syntax for clearing the screen in Cpp in Windows","system(\"cls\")",5);
-/*    
+    
     cout << "CIRCLE OF FIFTHS/CIRCLE OF FOURTHS RIDDLE\n";
     cin.get();
     
@@ -72,6 +72,27 @@ int main()
     newQuestion("Flats in the key of F?","Bb",5);
     newQuestion("Flats in the key of Bb?","Bb Eb",5);
     newQuestion("Flats in the key of Eb?","Eb Ab Bb",5);
+    newQuestion("Flats in the key of Ab?","Ab Bb Db Eb",5);
+    newQuestion("Flats in the key of Db?","Db Eb Gb Ab Bb",5);
+    newQuestion("Flats in the key of Gb?","Gb Ab Bb Cb Db Eb",5);
+    newQuestion("Flats in the key of Cb?","Cb Db Eb Fb Gb Ab Bb",5);
+    
+    
+    newQuestion("Sharps in the key of Em?","F#",5);
+    newQuestion("Sharps in the key of Bm?","F# C#",5);
+    newQuestion("Sharps in the key of F#m?","C# F# G#",5);
+    newQuestion("Sharps in the key of C#m?","F# G# C# D#",5);
+    newQuestion("Sharps in the key of G#m?","C# D# F# G# A#",5);
+    newQuestion("Sharps in the key of D#m?","F# G# A# C# D# E#",5);
+    newQuestion("Sharps in the key of A#m?","C# D# E# F# G# A# B#",5);
+    
+    newQuestion("Flats in the key of Dm?","Bb",5);
+    newQuestion("Flats in the key of Gm?","Bb Eb",5);
+    newQuestion("Flats in the key of Cm?","Eb Ab Bb",5);
+    newQuestion("Flats in the key of Fm?","Ab Bb Db Eb",5);
+    newQuestion("Flats in the key of Bbm?","Db Eb Gb Ab Bb",5);
+    newQuestion("Flats in the key of Ebm?","Gb Ab Bb Cb Db Eb",5);
+    newQuestion("Flats in the key of Abm?","Cb Db Eb Fb Gb Ab Bb",5);
     
     
     system("clear");
@@ -111,7 +132,7 @@ int main()
     newQuestion("Syntax for desabiliting screen updates","Application.ScreenUpdating = False",5);
     newQuestion("Syntax for habiliting events","Application.EnableEvents = True",5);
     newQuestion("Syntax for desabiliting events","Application.EnableEvents = False",5);
-    */
+    
     
     ////VBA: SubRutinas
     newQuestion("Syntax for declaring a subroutine","Sub Name() End Sub",5);
