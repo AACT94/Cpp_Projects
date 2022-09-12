@@ -39,27 +39,54 @@ int main()
     newQuestion("Order Of Sharps","F C G D A E B",5);
     newQuestion("Order of Flats","B E A D G C F",5);
 
-    newQuestion("Scale 0 Sharps/0 Flats","C",1);
-    newQuestion("Scale 1 Sharp","G",5);
-    newQuestion("Scale 1 Flat","F",5);
+
+    newQuestion("Major scale 0 Sharps/0 Flats","C",1);
+    newQuestion("Major scale 1 Sharp","G",5);
+    newQuestion("Major scale 1 Flat","F",5);
     
-    newQuestion("Scale 2 Sharps","D",5);
-    newQuestion("Scale 2 Flats","Bb",5);
+    newQuestion("Major scale 2 Sharps","D",5);
+    newQuestion("Major scale 2 Flats","Bb",5);
     
-    newQuestion("Scale 3 Sharps","A",5);
-    newQuestion("Scale 3 Flats","Eb",5);
+    newQuestion("Major scale 3 Sharps","A",5);
+    newQuestion("Major scale 3 Flats","Eb",5);
     
-    newQuestion("Scale 4 Sharps","E",5);
-    newQuestion("Scale 4 Flats","Ab",5);
+    newQuestion("Major scale 4 Sharps","E",5);
+    newQuestion("Major scale 4 Flats","Ab",5);
     
-    newQuestion("Scale 5 Sharps","B",5);
-    newQuestion("Scale 5 Flats","Db",5);
+    newQuestion("Major scale 5 Sharps","B",5);
+    newQuestion("Major scale 5 Flats","Db",5);
     
-    newQuestion("Scale 6 Sharps","F#",5);
-    newQuestion("Scale 6 Flats","Gb",5);
+    newQuestion("Major scale 6 Sharps","F#",5);
+    newQuestion("Major scale 6 Flats","Gb",5);
     
-    newQuestion("Scale 7 Sharps","C#",5);
-    newQuestion("Scale 7 Flats","Cb",5);
+    newQuestion("Major scale 7 Sharps","C#",5);
+    newQuestion("Major scale 7 Flats","Cb",5);
+    
+    
+    
+    newQuestion("Minor scale 0 Sharps/0 Flats","Am",1);
+    newQuestion("Minor scale 1 Sharp","Em",5);
+    newQuestion("Minor scale 1 Flat","Dm",5);
+    
+    newQuestion("Minor scale 2 Sharps","Bm",5);
+    newQuestion("Minor scale 2 Flats","Gm",5);
+    
+    newQuestion("Minor scale 3 Sharps","F#m",5);
+    newQuestion("Minor scale 3 Flats","Cm",5);
+    
+    newQuestion("Minor scale 4 Sharps","C#m",5);
+    newQuestion("Minor scale 4 Flats","Fm",5);
+    
+    newQuestion("Minor scale 5 Sharps","G#m",5);
+    newQuestion("Minor scale 5 Flats","Bbm",5);
+    
+    newQuestion("Minor scale 6 Sharps","D#m",5);
+    newQuestion("Minor scale 6 Flats","Ebm",5);
+    
+    newQuestion("Minor scale 7 Sharps","A#m",5);
+    newQuestion("Minor scale 7 Flats","Abm",5);
+    
+    
     
     newQuestion("Sharps in the key of G?","F#",5);
     newQuestion("Sharps in the key of D?","F# C#",5);
@@ -68,6 +95,7 @@ int main()
     newQuestion("Sharps in the key of B?","C# D# F# G# A#",5);
     newQuestion("Sharps in the key of F#?","F# G# A# C# D# E#",5);
     newQuestion("Sharps in the key of C#?","C# D# E# F# G# A# B#",5);
+    
     
     newQuestion("Flats in the key of F?","Bb",5);
     newQuestion("Flats in the key of Bb?","Bb Eb",5);
@@ -79,20 +107,21 @@ int main()
     
     
     newQuestion("Sharps in the key of Em?","F#",5);
-    newQuestion("Sharps in the key of Bm?","F# C#",5);
-    newQuestion("Sharps in the key of F#m?","C# F# G#",5);
-    newQuestion("Sharps in the key of C#m?","F# G# C# D#",5);
-    newQuestion("Sharps in the key of G#m?","C# D# F# G# A#",5);
-    newQuestion("Sharps in the key of D#m?","F# G# A# C# D# E#",5);
-    newQuestion("Sharps in the key of A#m?","C# D# E# F# G# A# B#",5);
+    newQuestion("Sharps in the key of Bm?","C# F#",5);
+    newQuestion("Sharps in the key of F#m?","F# G# C#",5);
+    newQuestion("Sharps in the key of C#m?","C# D# F# G#",5);
+    newQuestion("Sharps in the key of G#m?","G# A# C# D# F#",5);
+    newQuestion("Sharps in the key of D#m?","D# E# F# G# A# C#",5);
+    newQuestion("Sharps in the key of A#m?","A# B# C# D# E# F# G#",5);
+    
     
     newQuestion("Flats in the key of Dm?","Bb",5);
     newQuestion("Flats in the key of Gm?","Bb Eb",5);
     newQuestion("Flats in the key of Cm?","Eb Ab Bb",5);
     newQuestion("Flats in the key of Fm?","Ab Bb Db Eb",5);
-    newQuestion("Flats in the key of Bbm?","Db Eb Gb Ab Bb",5);
-    newQuestion("Flats in the key of Ebm?","Gb Ab Bb Cb Db Eb",5);
-    newQuestion("Flats in the key of Abm?","Cb Db Eb Fb Gb Ab Bb",5);
+    newQuestion("Flats in the key of Bbm?","Bb Db Eb Gb Ab",5);
+    newQuestion("Flats in the key of Ebm?","Eb Gb Ab Bb Cb Db",5);
+    newQuestion("Flats in the key of Abm?","Ab Bb Cb Db Eb Fb Gb",5);
     
     
     system("clear");
@@ -106,16 +135,36 @@ int main()
     newQuestion("Relative Minor to A?","F#m",5);
     newQuestion("Relative Minor to E?","C#m",5);
     newQuestion("Relative Minor to B?","G#m",5);
-    newQuestion("Relative Minor to F#","D#m",5);
-    newQuestion("Relative Minor to C#","A#m",5);
+    newQuestion("Relative Minor to F#?","D#m",5);
+    newQuestion("Relative Minor to C#?","A#m",5);
     
-    newQuestion("Relative Minor to F","Dm",5);
-    newQuestion("Relative Minor to Bb","Gm",5);
-    newQuestion("Relative Minor to Eb","Cm",5);
-    newQuestion("Relative Minor to Ab","Fm",5);
-    newQuestion("Relative Minor to Db","Bbm",5);
-    newQuestion("Relative Minor to Gb","Ebm",5);
-    newQuestion("Relative Minor to Cb","Abm",5);
+    newQuestion("Relative Minor to F?","Dm",5);
+    newQuestion("Relative Minor to Bb?","Gm",5);
+    newQuestion("Relative Minor to Eb?","Cm",5);
+    newQuestion("Relative Minor to Ab?","Fm",5);
+    newQuestion("Relative Minor to Db?","Bbm",5);
+    newQuestion("Relative Minor to Gb?","Ebm",5);
+    newQuestion("Relative Minor to Cb?","Abm",5);
+    
+    
+    
+    newQuestion("Relative Minor to Am?","C",5);
+    newQuestion("Relative Minor to Em?","G",5);
+    newQuestion("Relative Minor to Bm?","D",5);
+    newQuestion("Relative Minor to F#m?","A",5);
+    newQuestion("Relative Minor to C#m?","E",5);
+    newQuestion("Relative Minor to G#m?","B",5);
+    newQuestion("Relative Minor to D#m?","F#",5);
+    newQuestion("Relative Minor to A#m?","C#",5);
+    
+    
+    newQuestion("Relative Minor to Dm?","F",5);
+    newQuestion("Relative Minor to Gm","Bb",5);
+    newQuestion("Relative Minor to Cm?","Eb",5);
+    newQuestion("Relative Minor to Fm?","Ab",5);
+    newQuestion("Relative Minor to Bbm","Dbm",5);
+    newQuestion("Relative Minor to Ebm","Gb",5);
+    newQuestion("Relative Minor to Abm","Cb",5);
     
     
     /////VBA: Workbooks
