@@ -27,9 +27,8 @@ void newQuestion(string question,string answer,int repetitions){
 
 int main()
 {
-   // newQuestion("Syntax for clearing the screen in Cpp in Linux/MAC","system(\"clear\")",5);
-   // newQuestion("Syntax for clearing the screen in Cpp in Windows","system(\"cls\")",5);
-   /* 
+
+
     cout << "CIRCLE OF FIFTHS/CIRCLE OF FOURTHS RIDDLE\n";
     cin.get();
     
@@ -166,30 +165,4 @@ int main()
     newQuestion("Relative Minor to Ebm","Gb",5);
     newQuestion("Relative Minor to Abm","Cb",5);
     
-    */
-    /////VBA: Workbooks
-    newQuestion("Syntax for open a workbook using absolute path","Workbook.Open Filename = \"C:\\User\\Documents\\Book1.xlsx\"",5);
-    newQuestion("Syntax for open a workbook using relative path","Workbook.Open Filename = \".\\Book1.xlsx\"",5);
-    newQuestion("Syntax for closing a workbook not saving the changes","Workbook(\"Book1.xlsx\").Close SaveChanges := False",5);
-    newQuestion("Syntax for closing a workbook saving the changes","Workbook(\"Book1.xlsx\").Close SaveChanges := True",5);
-    newQuestion("Syntax for referencing the actual workbook","ThisWorkbook.Worksheets(\"Sheet1\").Range(\"A1\")",5);
-    
-    /////VBA: Objects: Application
-    newQuestion("Syntax for habiliting calculation","Application.Calculation = xlCalculationAutomatic",5);
-    newQuestion("Syntax for desabiliting calculation","Application.Calculation = xlCalculationManual",5);
-    newQuestion("Syntax for habiliting screen updates","Application.ScreenUpdating = True",5);
-    newQuestion("Syntax for desabiliting screen updates","Application.ScreenUpdating = False",5);
-    newQuestion("Syntax for habiliting events","Application.EnableEvents = True",5);
-    newQuestion("Syntax for desabiliting events","Application.EnableEvents = False",5);
-    
-    
-    ////VBA: SubRutinas
-    newQuestion("Syntax for declaring a subroutine","Sub Name() End Sub",5);
-    
-    
-    ////VBA: Strings
-    newQuestion("Function to replace a character in a string","example = Replace(stringName,letterToFind,replacement)",5);
-    return 0;
-    
 }
-    
