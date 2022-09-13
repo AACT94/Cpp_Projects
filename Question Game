@@ -29,7 +29,7 @@ int main()
 {
    // newQuestion("Syntax for clearing the screen in Cpp in Linux/MAC","system(\"clear\")",5);
    // newQuestion("Syntax for clearing the screen in Cpp in Windows","system(\"cls\")",5);
-    
+   /* 
     cout << "CIRCLE OF FIFTHS/CIRCLE OF FOURTHS RIDDLE\n";
     cin.get();
     
@@ -177,7 +177,7 @@ int main()
     /////VBA: Objects: Application
     newQuestion("Syntax for habiliting calculation","Application.Calculation = xlCalculationAutomatic",5);
     newQuestion("Syntax for desabiliting calculation","Application.Calculation = xlCalculationManual",5);
-    newQuestion("Syntax for habiliting screen updates","Application.ScreenUpdating = True",5);a
+    newQuestion("Syntax for habiliting screen updates","Application.ScreenUpdating = True",5);
     newQuestion("Syntax for desabiliting screen updates","Application.ScreenUpdating = False",5);
     newQuestion("Syntax for habiliting events","Application.EnableEvents = True",5);
     newQuestion("Syntax for desabiliting events","Application.EnableEvents = False",5);
@@ -189,4 +189,7 @@ int main()
     
     ////VBA: Strings
     newQuestion("Function to replace a character in a string","example = Replace(stringName,letterToFind,replacement)",5);
+    return 0;
+    
+}
     
