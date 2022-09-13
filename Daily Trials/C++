@@ -27,6 +27,17 @@ void newQuestion(string question,string answer,int repetitions){
 
 int main()
 {
+    
+    ////C++: Personal Notes
+    newQuestion("Name of the person that developed C++?","Bjarne Stroustrup",5);
+    newQuestion("Year and version of the first update?","2011 C++11",5);
+    newQuestion("Year and version of the second update?","2014 C++14",5);
+    newQuestion("Year and version of the third update?","2017 C++17",5);
+    newQuestion("Year and version of the fourth update?","2020 C++20",5);
+    newQuestion("Main difference between C and C++?","C++ supports classes and objects",5);
+    newQuestion("The compiler ignores_____?","white spaces",5);
+    
+    
     ////C++: Basic Syntax
     newQuestion("Syntax for include directive","#include <libraryName>",5);
     newQuestion("Five important libraries to include","<iostream> <string> <vector> <cmath> <algorithm>",5);
@@ -34,12 +45,13 @@ int main()
   
 
     ////C++: Arrays
-    newQuestion("Syntax for declaring an array","datatype variableName [] = {val1,val2};",5);
+    newQuestion("Syntax for declaring an array","datatype arrayName [] = {val1,val2};",5);
     newQuestion("Does C++ have an length property?","No",5);
-    newQuestion("Syntax for obtain an array length","int length = sizeof(arrayName) / sizeof(arrayDatatype);",5)
+    newQuestion("Syntax for obtain an array length","int length = sizeof(arrayName) / sizeof(arrayDatatype);",5);
+    
     
     ////C++: Others
-    newQuestion("Syntax for clearing the screen in Cpp in Linux/MAC","system(\"clear\")",5);
-    newQuestion("Syntax for clearing the screen in Cpp in Windows","system(\"cls\")",5);
+    newQuestion("Syntax for clearing the screen in Cpp in Linux/MAC","system(\"clear\")'",5);
+    newQuestion("Syntax for clearing the screen in Cpp in Windows","system(\"cls\")'",5);
 }
     
