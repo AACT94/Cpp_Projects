@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+void newQuestion(string question,string answer,int repetitions){
+    //Si colocamos este valor como 0, entonces nuestro programara, empezar a tomar la cantidad
+    //de repeticiones del usuario.
+    int state = 1;
+    if (state != 0) {repetitions = 1;}
+    system("clear");
+    string userAnswer;
+    do {
+        cout << question << ": ";
+        getline(cin,userAnswer);
+        if (userAnswer == answer){
+            repetitions --;
+            system("clear");
+            cout << "Correct," << repetitions << " more times to finish," << endl;
+        }
+        else {
+            cout << "Wrong, Try Again\n";
+        }
+    } while (repetitions > 0);
+    system("clear");
+    cout <<"End Trial" << flush;
+}
+
+int main()
+{
+    ////C++: Basic Syntax
+    newQuestion("Syntax for include directive","#include <libraryName>",5);
+    newQuestion("Five important libraries to include","<iostream> <string> <vector> <cmath> <algorithm>",5);
+    newQuestion("Syntax to use namespace std","using namespace std;",5);
+  
+
+    ////C++: Arrays
+    newQuestion("Syntax for declaring an array","datatype variableName [] = {val1,val2};",5);
+    newQuestion("Does C++ have an length property?","No",5);
+    newQuestion("Syntax for obtain an array length","int length = sizeof(arrayName) / sizeof(arrayDatatype);",5)
+    
+    ////C++: Others
+    newQuestion("Syntax for clearing the screen in Cpp in Linux/MAC","system(\"clear\")",5);
+    newQuestion("Syntax for clearing the screen in Cpp in Windows","system(\"cls\")",5);
+}
+    
