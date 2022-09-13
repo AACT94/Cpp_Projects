@@ -1,0 +1,56 @@
+#include <iostream>
+
+using namespace std;
+
+void newQuestion(string question,string answer,int repetitions){
+    //Si colocamos este valor como 0, entonces nuestro programara, empezar a tomar la cantidad
+    //de repeticiones del usuario.
+    int state = 1;
+    if (state != 0) {repetitions = 1;}
+    system("clear");
+    string userAnswer;
+    do {
+        cout << question << ": ";
+        getline(cin,userAnswer);
+        if (userAnswer == answer){
+            repetitions --;
+            system("clear");
+            cout << "Correct," << repetitions << " more times to finish," << endl;
+        }
+        else {
+            cout << "Wrong, Try Again\n";
+        }
+    } while (repetitions > 0);
+    system("clear");
+    cout <<"End Trial" << flush;
+}
+
+int main()
+{
+
+
+    /////VBA: Workbooks
+    newQuestion("Syntax for open a workbook using absolute path","Workbook.Open Filename = \"C:\\User\\Documents\\Book1.xlsx\"",5);
+    newQuestion("Syntax for open a workbook using relative path","Workbook.Open Filename = \".\\Book1.xlsx\"",5);
+    newQuestion("Syntax for closing a workbook not saving the changes","Workbook(\"Book1.xlsx\").Close SaveChanges := False",5);
+    newQuestion("Syntax for closing a workbook saving the changes","Workbook(\"Book1.xlsx\").Close SaveChanges := True",5);
+    newQuestion("Syntax for referencing the actual workbook","ThisWorkbook.Worksheets(\"Sheet1\").Range(\"A1\")",5);
+    
+    /////VBA: Objects: Application
+    newQuestion("Syntax for habiliting calculation","Application.Calculation = xlCalculationAutomatic",5);
+    newQuestion("Syntax for desabiliting calculation","Application.Calculation = xlCalculationManual",5);
+    newQuestion("Syntax for habiliting screen updates","Application.ScreenUpdating = True",5);
+    newQuestion("Syntax for desabiliting screen updates","Application.ScreenUpdating = False",5);
+    newQuestion("Syntax for habiliting events","Application.EnableEvents = True",5);
+    newQuestion("Syntax for desabiliting events","Application.EnableEvents = False",5);
+    
+    
+    ////VBA: SubRutinas
+    newQuestion("Syntax for declaring a subroutine","Sub Name() End Sub",5);
+    
+    
+    ////VBA: Strings
+    newQuestion("Function to replace a character in a string","example = Replace(stringName,letterToFind,replacement)",5);
+    return 0;
+    
+    }
