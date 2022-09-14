@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+void newQuestion(string question,string answer,int repetitions){
+    //Si colocamos este valor como 0, entonces nuestro programara, empezar a tomar la cantidad
+    //de repeticiones del usuario.
+    int state = 1;
+    if (state != 0) {repetitions = 1;}
+    system("clear");
+    string userAnswer;
+    do {
+        cout << question << ": ";
+        getline(cin,userAnswer);
+        if (userAnswer == answer){
+            repetitions --;
+            system("clear");
+            cout << "Correct," << repetitions << " more times to finish," << endl;
+        }
+        else {
+            cout << "Wrong, Try Again\n";
+        }
+    } while (repetitions > 0);
+    system("clear");
+    cout <<"End Trial" << flush;
+}
+
+int main()
+{
+    
+    newQuestion("What is software?","A collection of programs running on some computer",5);
+    newQuestion("What is CAD?","Computer-Aided Design",5);
+    newQuestion("What is CAM?","Computer-Aided Manufacture,5);
+    newQuestion("What is a server-farm?","Collection of computers providing web services",5);
+    newQuestion("What do we want from our programs?","Correctness, Reliability, Well Designed, Affordable, Maintainable",5);
+    newQuestion("What are the four stages of developing a program?","Analysis, Design, Programming, Testing",5);
+    newQuestion("What are the four questions in the Analysis stage?","What is the problem? What does the user want? What does the user need? What can the user afford? What kind of reliability do we need?",5);
+    newQuestion("What are the five questions in the Design stage?","How do we solve the problem? What should be the overall structure of the system? Which part does it consist of? How do those parts communicate with each other? How does the system communicate with its users?",5);
+    newQuestion("What are the two goals in the Programming stage?","Express the solution to the problem in code, Write the code in a way that meets all constraints",5);
+    newQuestion("What are the four constraints in the Programming stage?","Time, space, money, reliability",5);
+    newQuestion("What is the goal in the Testing stage?","Make sure the system works correctly under all circumstances required, by systematically trying it out",5);
+    
+}
