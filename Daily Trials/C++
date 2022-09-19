@@ -51,6 +51,6 @@ int main()
     
     
     ////C++: Others
-    newQuestion("Syntax for clearing the screen in Cpp in Linux/MAC","system(\"clear\")'",5);
-    newQuestion("Syntax for clearing the screen in Cpp in Windows","system(\"cls\")'",5);
+    newQuestion("Syntax for clearing the screen in Cpp in Linux/MAC","system(\"clear\");",5);
+    newQuestion("Syntax for clearing the screen in Cpp in Windows","system(\"cls\");",5);
 }
