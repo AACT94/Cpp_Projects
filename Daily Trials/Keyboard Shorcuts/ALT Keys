@@ -1,0 +1,67 @@
+#include <iostream>
+
+using namespace std;
+
+void newQuestion(string question,string answer,int repetitions){
+    //Si colocamos este valor como 0, entonces nuestro programara, empezar a tomar la cantidad
+    //de repeticiones del usuario.
+    int state = 0;
+    if (state != 0) {repetitions = 1;}
+    system("clear");
+    string userAnswer;
+    do {
+        cout << question << ": ";
+        getline(cin,userAnswer);
+        if (userAnswer == answer){
+            repetitions --;
+            system("clear");
+            cout << "Correct," << repetitions << " more times to finish," << endl;
+        }
+        else {
+            cout << "Wrong, Try Again\n";
+        }
+    } while (repetitions > 0);
+    system("clear");
+    cout <<"End Trial" << flush;
+}
+
+int main()
+{
+
+    ///Lowercase keys
+    newQuestion("á","160",5);
+    newQuestion("é","130",5);
+    newQuestion("í","161",5);
+    newQuestion("ó","162",5);
+    newQuestion("ú","163",5);
+    
+    
+    ///Uppercase keys
+    newQuestion("Á","0193",5);
+    newQuestion("É","0201",5);
+    newQuestion("Í","0205",5);
+    newQuestion("Ó","0211",5);
+    newQuestion("Ú","0218",5);
+    
+    ///Other letters
+    newQuestion("ü","129",5);
+    newQuestion("Ü","0220",5);
+    newQuestion("ñ","164",5);
+    newQuestion("Ñ","165",5);
+    
+    //Other symbols
+    newQuestion("@","64",5);
+    newQuestion("¿","168",5);
+    newQuestion("¡","173",5);
+    newQuestion("«","174",5);
+    newQuestion("»","175",5);
+    newQuestion("°","0176",5);
+    newQuestion("—","0151",5);
+    newQuestion("↑","24",5);
+    newQuestion("↓","25",5);
+    newQuestion("→","26",5);
+    newQuestion("←","27",5);
+    newQuestion("▲","30",5);
+    newQuestion("▼","31",5);
+    
+}
